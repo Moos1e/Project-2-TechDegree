@@ -1,33 +1,18 @@
-#task 1 Import player data
 import constants
 
 
+#Welcome page with select for stats
+
+def welcomeMenu():
+    print('''
+    Welcome to the this seasons stat sheet!
+    Please select a choice to continue or quit
+    1. Display Stats
+    2. Quit
+    ''')
 
 
+    choice = print("Please select an option: ")
+    choice = int(choice)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if __name__ == '__main__':
+    while choice == 1:
