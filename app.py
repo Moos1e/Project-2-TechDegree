@@ -11,8 +11,23 @@ def welcomeMenu():
     2. Quit
     ''')
 
+def option():
+    selection = input("Please select an option")
 
-    choice = print("Please select an option: ")
-    choice = int(choice)
+    while selection:
+        selection = int(selection)
+        if selection == '1'
 
-    while choice == 1:
+        try:
+            selection = int(selection)
+            if selection != 1 and selection != 2:
+                raise ValueError("Please type in a number that is 1 or 2")
+        continue
+    else:
+        return selection
+
+#Teams
+def teams():
+    panthers = []
+    warriors = []
+    bandits = []
