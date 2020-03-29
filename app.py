@@ -1,6 +1,11 @@
 import constants
+from copy import deepcopy
+import os
 
 
+
+players = constants.PLAYERS
+teams = constants.TEAMS
 #Welcome page with select for stats
 
 def welcomeMenu():
