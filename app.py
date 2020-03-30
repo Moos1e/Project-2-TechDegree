@@ -1,38 +1,50 @@
+#Python Web Development Techdegree
+#Project 2 - Basketball Team Stat Tool
+
 import constants
+import random
 from copy import deepcopy
 import os
 
 
 
-players = constants.PLAYERS
-teams = constants.TEAMS
+teams = deepcopy(constants.TEAMS)
+players = deepcopy(constants.PLAYERS)
+
+
 #Welcome page with select for stats
 
-def welcomeMenu():
-    print('''
-    Welcome to the this seasons stat sheet!
-    Please select a choice to continue or quit
-    1. Display Stats
-    2. Quit
-    ''')
+print("BASKETBALL TEAM STATS TOOL\n")
+    while True:
+        print("----MENU----\n1) Display Team Stats\n2)QUIT\n")
+        menu_input = input("Enter an option >  ")
+        while menu_input != "1" and menu_input != "2":
+            clear_screen()
+            menu_input = input("The is not a valid selection\nPlease enter either 1 for TEAM STATS or 2 to QUIT the program\n\n-----------MENU-----------\n\n1) Display Team Stats\n2)QUIT\n>  ")
 
-def option():
-    selection = input("Please select an option")
+        if menu_input == "1":
+            team_menu()
+        else:
+            clear_screen()
+            print("Good Bye")
+            break
 
-    while selection:
-        selection = int(selection)
-        if selection == '1'
+#add players
+def playerAdd():
 
-        try:
-            selection = int(selection)
-            if selection != 1 and selection != 2:
-                raise ValueError("Please type in a number that is 1 or 2")
-        continue
-    else:
-        return selection
+    players
+    numberOfPlayers = 0
+    teams = []
+    nums = set()
 
-#Teams
-def teams():
-    panthers = []
-    warriors = []
-    bandits = []
+    while len(num) < 6:
+        nums.add(random.choice(players))
+
+    for num in nums:
+        team.append(players[num]["name"])
+        numberOfPlayers += 1
+        all.remove(num)
+
+    return num_players, team
+
+
